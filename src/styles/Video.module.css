@@ -1,0 +1,35 @@
+.controlBtn1 {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  background-color: white;
+  left: 10vw;
+  border-radius: 50%;
+  bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+.controlBtn2 {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  background-color: white;
+  right: 10vw;
+  bottom: 2vh;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.controlBtn1 .controlBtn2 > img {
+  object-fit: contain;
+  width: 2.5vw;
+  height: 2.5vw;
+}

@@ -1,0 +1,48 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://skribbl.io/img/background.png);
+}
+
+.mainTitle {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.secondTitle {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: whitesmoke;
+  margin-top: 1rem;
+  width: 40%;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2c549b;
+  background-color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .secondTitle {
+    width: 90%;
+  }
+}

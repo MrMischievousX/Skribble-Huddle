@@ -1,0 +1,48 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://skribbl.io/img/background.png);
+}
+
+.header {
+  display: flex;
+  width: 79vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.start {
+  font-size: 2rem;
+  font-weight: 700;
+  color: lightblue;
+  cursor: pointer;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 92vh;
+}
+
+.gridItem {
+  border: 1px solid white;
+  padding: 1vw;
+  text-align: center;
+  width: 26vw;
+  height: 30vh;
+  margin: 4px;
+  border-radius: 6px;
+}
