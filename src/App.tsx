@@ -55,10 +55,29 @@ const App = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    let ws = new WebSocket(
-      "wss://skribble-backend-mrmischievousx.onrender.com"
-    );
-    // let ws = new WebSocket("ws://localhost:8080");
+    // let ws = new WebSocket(
+    //   "wss://skribble-backend-mrmischievousx.onrender.com"
+    // );
+    let ws = new WebSocket("ws://localhost:8080");
+
+    ws.onclose = (e) => {
+      navigate("/error", {
+        state: {
+          error: "Connection Failed",
+          message: "Looks like the server is busy try playing after sometime.",
+        },
+      });
+    };
+
+    ws.onerror = (e) => {
+      navigate("/error", {
+        state: {
+          error: "Connection Failed",
+          message: "Looks like the server is busy try playing after sometime.",
+        },
+      });
+    };
+
     ws.onmessage = (message) => {
       const response = JSON.parse(message.data);
 

@@ -3,7 +3,7 @@ import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
-// console.log = () => null;
+console.log = () => null;
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
