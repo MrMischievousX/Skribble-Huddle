@@ -25,17 +25,17 @@ const Lobby = () => {
   useEffect(() => {
     if (!gameRef.current) navigate("/");
 
-    // try {
-    //   huddleClient.join(gameRef.current, {
-    //     address: process.env.REACT_APP_WALLET_ADDRESS || "",
-    //     wallet: "",
-    //     ens: "axit.eth",
-    //   });
+    try {
+      huddleClient.join(gameRef.current, {
+        address: process.env.REACT_APP_WALLET_ADDRESS || "",
+        wallet: "",
+        ens: "axit.eth",
+      });
 
-    //   console.log("joined");
-    // } catch (error) {
-    //   console.log({ error });
-    // }
+      console.log("joined");
+    } catch (error) {
+      console.log({ error });
+    }
   }, []);
 
   return (
