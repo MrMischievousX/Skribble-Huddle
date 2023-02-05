@@ -55,10 +55,10 @@ const App = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // let ws = new WebSocket(
-    //   "wss://skribble-backend-mrmischievousx.onrender.com"
-    // );
-    let ws = new WebSocket("ws://localhost:8080");
+    let ws = new WebSocket(
+      "wss://skribble-backend-mrmischievousx.onrender.com"
+    );
+    // let ws = new WebSocket("ws://localhost:8080");
 
     ws.onclose = (e) => {
       navigate("/error", {
