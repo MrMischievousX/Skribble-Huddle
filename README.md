@@ -16,4 +16,6 @@ Use your mouse to draw and double click to change between erasing and drawing mo
 
 [Skribble Backend](https://github.com/MrMischievousX/skribble-backend)
 
-Hackathon link (We won 1st price) : https://devfolio.co/projects/we-draw-2c2c
+# Hackathon link
+
+[We won 1st prize](https://devfolio.co/projects/we-draw-2c2c)
